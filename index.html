@@ -36,9 +36,9 @@
       <!-- Nav Section Start From Here  -->
       <nav class="container mx-auto lg:px-24 lg:py-14 py-4">
         <div class="navbar bg-base-100">
-          <div class="navbar-start">
+          <div class="navbar-start flex lg:justify-start justify-between">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div tabindex="0" role="button" class="lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -56,9 +56,9 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-color-secondary text-white rounded-box w-24"
               >
-                <li><a>Home</a></li>
+                <li><a class="font-bold">Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Pages</a></li>
                 <li><a>Blog</a></li>
@@ -71,15 +71,21 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-base">
-              <li><a class="text-color-secondary font-bold">Home</a></li>
-              <li><a>About</a></li>
+              <li>
+                <a class="text-color-secondary font-bold">Home</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
               <li><a>Pages</a></li>
               <li><a>Blog</a></li>
               <li><a>Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle hidden lg:flex">
+            <button
+              class="btn btn-ghost hover:text-color-secondary btn-circle hidden lg:flex"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
@@ -96,13 +102,112 @@
               </svg>
             </button>
             <a
-              class="btn bg-color-secondary text-white lg:text-xl text-lg font-bold lg:px-6 px-4"
+              class="btn bg-color-secondary text-white hover:text-color-secondary lg:text-xl text-lg font-bold lg:px-6 px-4"
               >Get Ticket</a
             >
           </div>
         </div>
       </nav>
       <!-- Nav Section End Here  -->
+      <!-- Banner Section Start From Here -->
+      <section
+        class="container mx-auto lg:px-24 px-2 space-y-4 lg:mb-24 mb-10 relative"
+      >
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-[url(./Images/1.png)] bg-no-repeat bg-center bg-cover lg:h-[70vh] h-[40vh] lg:rounded-2xl rounded-xl"
+          >
+            <div
+              class="absolute w-full flex lg:justify-start justify-center lg:bottom-8 bottom-5 lg:left-8 left-0 lg:gap-4 gap-2"
+            >
+              <a
+                href="#slide4"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-[url(./Images/2.png)] bg-no-repeat bg-center bg-cover lg:h-[70vh] h-[40vh] lg:rounded-2xl rounded-xl"
+          >
+            <div
+              class="absolute w-full flex lg:justify-start justify-center lg:bottom-8 bottom-5 lg:left-8 left-0 lg:gap-4 gap-2"
+            >
+              <a
+                href="#slide1"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-[url(./Images/3.png)] bg-no-repeat bg-center bg-cover lg:h-[70vh] h-[40vh] lg:rounded-2xl rounded-xl"
+          >
+            <div
+              class="absolute w-full flex lg:justify-start justify-center lg:bottom-8 bottom-5 lg:left-8 left-0 lg:gap-4 gap-2"
+            >
+              <a
+                href="#slide2"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full bg-[url(./Images/4.png)] bg-no-repeat bg-center bg-cover lg:h-[70vh] h-[40vh] lg:rounded-2xl rounded-xl"
+          >
+            <div
+              class="absolute w-full flex lg:justify-start justify-center lg:bottom-8 bottom-5 lg:left-8 left-0 lg:gap-4 gap-2"
+            >
+              <a
+                href="#slide3"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="flex items-center justify-center lg:w-10 w-7 lg:h-10 h-7 bg-black rounded-full lg:text-2xl text-base text-white hover:text-color-secondary"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:absolute bg-color-primary text-white lg:p-8 p-4 lg:rounded-2xl rounded-xl lg:bottom-8 lg:right-32"
+        >
+          <h1 class="lg:text-2xl text-lg font-extrabold lg:mb-4 mb-2">
+            Meet all the heroes from the field
+          </h1>
+          <p
+            class="lg:text-base text-sm font-medium max-w-[540px] text-[#FFFFFF99]"
+          >
+            Meet each of our heros and support them watching the game in the
+            field physically. Our heros will be motivate and energetic getting
+            your support guys. We are cordially invite you to all enjoy the game
+            and support our team.
+          </p>
+        </div>
+      </section>
+      <!-- Banner Section End Here -->
     </header>
     <!-- Header Section End Here  -->
     <!-- Main Section Start From Here -->
